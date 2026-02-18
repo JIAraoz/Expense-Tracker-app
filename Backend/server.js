@@ -16,6 +16,13 @@ app.get("/info",(req,res)=>{
     })
 })
 
+app.get("/fecha",(req,res)=>{
+
+    res.status(200).json({
+        info: new Date()
+    })
+})
+
 
 
 app.listen(port, () => {
